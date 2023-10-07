@@ -1,0 +1,87 @@
+:root {
+    --green: #fcff69;
+    --green-light: #f4f59d;
+    --gray-light: #BDBDBD;
+    --dark-gray: #263238;
+    --black: #212121;
+}
+
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1500px;
+    outline: 0px solid white;
+}
+
+h1 {
+    padding: 1rem 0;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--green);
+    outline: 1px solid white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/**/
+nav{
+    width: 100%;
+    background-color: #7f7f80;
+    height: 44px;
+    padding: 0 40px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+}
+.topnav-right {
+    float: right;
+    color: white;
+  }
+
+nav ul,
+nav ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 20px;
+    margin: 0;
+    line-height: 44px;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-align: right;
+    color: #f4f59d;
+    float: right;
+}
+
+nav ul li a:hover{
+    background-color: whitesmoke;
+    color: #7f7f80;
+}
+
+/* Add a media query for mobile mode */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide the navigation bar */
+    }
+}
+
+/* Add a media query for PC mode */
+@media (min-width: 769px) {
+    nav {
+        display: block; /* Display the navigation bar */
+    }
+}
+

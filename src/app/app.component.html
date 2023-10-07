@@ -1,0 +1,22 @@
+
+    <nav *ngIf="pcMode">
+        <ul>
+            <li><a href="#section0">Home</a></li>
+            <li><a href="#section1">About</a></li>
+            <li><a href="#section2">Skills</a></li>
+            <li><a href="#section3">Education & Experience</a></li>    
+            <li><a href="#section4">Projects</a></li>
+            <li><a href="#section5">Contact</a></li>
+        </ul>
+    </nav>
+
+
+<app-banner appResponsive id="section0"></app-banner>
+<app-about appResponsive id="section1"></app-about>
+<app-skills appResponsive id="section2"></app-skills>
+<div class="container" id="section3">
+    <app-education appResponsive></app-education>
+    <app-work-experience appResponsive></app-work-experience>
+</div>
+<app-projects appResponsive id="section4"></app-projects>
+<app-contact appResponsive id="section5"></app-contact>
